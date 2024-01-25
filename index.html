@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="tekst"></h1>
+    <button onclick="plusnumber()">++</button>
+    <button onclick="plusminus()">--</button>
+    <button onclick="reset()">reset</button>
+
+
+    <script>
+        let number = 0;
+
+        textnumber();
+        function textnumber() {
+            document.getElementById('tekst').innerHTML = number;
+        }
+
+        function plusnumber() {
+            number++;
+            textnumber();
+        }
+
+        function plusminus() {
+            number--;
+            textnumber();
+        }
+
+        function reset() {
+            number = 0;
+            textnumber();
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
